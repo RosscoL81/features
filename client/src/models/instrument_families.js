@@ -1,4 +1,5 @@
-const PubSub = require('../helpers/pub_sub.js');
+// const PubSub = require('../helpers/pub_sub.js');
+const PubSub = import('../helpers/pub_sub.js');
 
 class InstrumentFamilies{
   constructor(data){
@@ -19,4 +20,5 @@ publishFamilyDetail(selectedIndex) {
   PubSub.publish('InstrumentFamilies:selected-family-ready', selectedFamily)
 };
 }
-module.exports = InstrumentFamilies;
+// module.exports = InstrumentFamilies;
+export {InstrumentFamilies as default};

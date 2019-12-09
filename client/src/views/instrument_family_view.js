@@ -1,4 +1,5 @@
-const PubSub = require('../helpers/pub_sub.js');
+// const PubSub = require('../helpers/pub_sub.js');
+const PubSub = import('../helpers/pub_sub.js');
 
 class InstrumentFamilyView{
   constructor(container){
@@ -48,4 +49,5 @@ createInstrumentList(instruments) {
 };
 }
 
-module.exports = InstrumentFamilyView;
+// module.exports = InstrumentFamilyView;
+export {InstrumentFamilyView as default};

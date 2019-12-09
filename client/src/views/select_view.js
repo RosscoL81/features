@@ -1,4 +1,5 @@
-const PubSub = require('../helpers/pub_sub.js');
+// const PubSub = require('../helpers/pub_sub.js');
+const PubSub = import('../helpers/pub_sub.js');
 
 class SelectView{
   constructor(element){
@@ -26,4 +27,5 @@ populate(instrumentFamilyData) {
   });
 };
 }
-module.exports = SelectView;
+// module.exports = SelectView;
+export {SelectView as default};
